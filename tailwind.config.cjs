@@ -7,7 +7,8 @@ module.exports = {
 				base: '#84a59d',
 				light: '#ead4bc',
 				lighter: '#eae0d5',
-				primary: '#ee6c4d'
+				primary: '#ee6c4d',
+				auxiliar: '#e94016'
 			},
 			fontFamily: {
 				sans: 'Montserrat',
