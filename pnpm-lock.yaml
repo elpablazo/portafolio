@@ -15,6 +15,7 @@ specifiers:
   prettier-plugin-svelte: ^2.8.1
   svelte: ^3.54.0
   svelte-check: ^3.0.1
+  svelte-typewriter: ^3.1.4
   tailwindcss: ^3.2.4
   tslib: ^2.4.1
   typescript: ^4.9.3
@@ -36,6 +37,7 @@ devDependencies:
   prettier-plugin-svelte: 2.9.0_kdmmghgdi3ngrsq6otxkjilbry
   svelte: 3.55.1
   svelte-check: 3.0.3_pehl75e5jsy22vp33udjja4soi
+  svelte-typewriter: 3.1.4_svelte@3.55.1
   tailwindcss: 3.2.4_postcss@8.4.21
   tslib: 2.5.0
   typescript: 4.9.4
@@ -1898,6 +1900,14 @@ packages:
       strip-indent: 3.0.0
       svelte: 3.55.1
       typescript: 4.9.4
+    dev: true
+
+  /svelte-typewriter/3.1.4_svelte@3.55.1:
+    resolution: {integrity: sha512-FNnXBRp2bd7/DK3k0hXwsFIp4YxZ1JcUYCHU+97ZllKYOW+jWBRAxImQUjB93YrwXa1zU+ItesPlwreyOjD9FQ==}
+    peerDependencies:
+      svelte: '>=3.47.x'
+    dependencies:
+      svelte: 3.55.1
     dev: true
 
   /svelte/3.55.1:
