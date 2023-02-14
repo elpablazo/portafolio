@@ -139,8 +139,8 @@
 	<div class="flex w-full flex-col gap-2 pb-6 md:pb-12">
 		<h1 class="text-center text-3xl font-bold text-based md:text-5xl">¿Necesitas un sitio web?</h1>
 		<h2 class="text-center text-xl text-based md:text-2xl">
-			Diseños altamente <span class="text-primary">interactivos</span>, hechos con precisión para la
-			<span class="text-primary">web moderna</span>.
+			Diseños altamente <span class="text-primary">interactivos</span>, hechos con
+			<span class="text-primary">precisión</span> para la web moderna.
 		</h2>
 	</div>
 
