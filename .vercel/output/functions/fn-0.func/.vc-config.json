@@ -1,5 +1,0 @@
-{
-	"runtime": "nodejs18.x",
-	"handler": "home/pablo-laptop/Documentos/GIthub/elpablazo.github.io/.svelte-kit/vercel-tmp/index.js",
-	"launcherType": "Nodejs"
-}
