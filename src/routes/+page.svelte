@@ -7,22 +7,59 @@
 
 	const sitios = [
 		{
+			src: '/websites/sholomitos/front.png',
+			titulo: 'Sholomitos',
+			descripcion: 'Alimentos premium para perro con envío gratuito en CDMX.',
+			href: 'https://sholomitos.com'
+		},
+		{
 			src: '/websites/cxp/front.jpg',
 			titulo: 'Capital Experiencias',
 			descripcion: 'Una plataforma de experiencias digitales con recompensas en tiempo real.',
 			href: 'https://www.capitalexperiencias.com'
 		},
 		{
-			src: '/websites/sholomitos/front.png',
-			titulo: 'Sholomitos',
-			descripcion: 'Una plataforma de experiencias digitales con recompensas en tiempo real.',
-			href: 'https://www.capitalexperiencias.com'
+			src: '/websites/mascotas/front.png',
+			titulo: 'WOOW ¡TODO BIEN!',
+			descripcion: 'Seguros para tu mascota.',
+			href: 'https://seguromascotas.woowtodobien.com/'
+		},
+		{
+			src: '/websites/stickycovers/front.png',
+			titulo: 'Sticky Covers!',
+			descripcion: 'Stickers para tus tarjetas bancarias con diseños personalizables.',
+			href: 'https://stickycovers.com'
+		},
+		{
+			src: '/websites/azteca_tools/front.png',
+			titulo: 'Azteca Tools',
+			descripcion: 'Tienda de herramientas con orgullo mexicano.',
+			href: 'https://aztecatools.mx'
+		},
+		{
+			src: '/websites/caradebola/front.png',
+			titulo: 'Cara de bola',
+			descripcion: 'Diseños para gente feliz.',
+			href: 'https://caradebola.com'
+		},
+		{
+			src: '/websites/nook/front.png',
+			titulo: 'Nook',
+			descripcion: 'Agencia de modelos nacionales e internacionales basada en Ciudad de México.',
+			href: 'https://www.nookmodelmanagement.com/'
+		},
+		{
+			src: '/websites/ecupay/front.png',
+			titulo: 'ECUPay (concepto)',
+			descripcion: 'Una plataforma que permite digitalizar los pagos escolares.',
+			href: 'https://framer.com/projects/ECUPay--mIQj0KsJV7hLQ9vZuHfd-6QaYT'
 		},
 		{
 			src: '/websites/pif/front.png',
 			titulo: 'Plataforma PIF Liverpool y Suburbia',
-			descripcion: 'Una plataforma de experiencias digitales con recompensas en tiempo real.',
-			href: 'https://www.capitalexperiencias.com'
+			descripcion:
+				'La plataforma para administrar el servicio PIF de todo Liverpool y Suburbia México.',
+			href: 'https://plataformapif.com'
 		}
 	];
 </script>
@@ -98,24 +135,24 @@
 <!-- FRONTMATTER -->
 
 <!-- LO QUE HAGO -->
-<div class="min-h-screen w-full gap-8 bg-light p-4 md:p-8">
+<div class="w-full gap-8 bg-light p-4 md:p-8">
 	<div class="flex w-full flex-col gap-2 pb-6 md:pb-12">
 		<h1 class="text-center text-3xl font-bold text-based md:text-5xl">¿Necesitas un sitio web?</h1>
 		<h2 class="text-center text-xl text-based md:text-2xl">
-			Diseños altamente <span class="text-primary">interactivos</span>, hechos a mano para la web
-			<span class="text-primary">moderna</span>.
+			Diseños altamente <span class="text-primary">interactivos</span>, hechos con precisión para la
+			<span class="text-primary">web moderna</span>.
 		</h2>
 	</div>
 
 	<!-- GRID DE SITIOS -->
-	<div class="grid grid-cols-1 gap-8 px-4 md:grid-cols-2 lg:grid-cols-3">
+	<div class="grid grid-cols-1 gap-10 px-4 md:grid-cols-2 lg:grid-cols-3">
 		{#each sitios as { src, titulo, descripcion, href }, i}
 			<!-- CXP -->
 			<a
 				{href}
 				target="_blank"
 				rel="noreferrer"
-				class="group relative overflow-hidden rounded-2xl drop-shadow-lg transition-all active:scale-95"
+				class="group relative overflow-hidden rounded-2xl drop-shadow-lg transition-all hover:scale-[1.04] active:scale-95"
 			>
 				<img
 					{src}
@@ -124,8 +161,8 @@
 				/>
 				<div
 					class={`absolute -bottom-96 w-full ${
-						i % 2 === 0 ? 'bg-based' : 'bg-primary'
-					} px-4 py-4 shadow drop-shadow-lg transition-all group-hover:bottom-0 active:group-hover:bottom-0`}
+						i % 2 === 0 ? 'bg-primary' : 'bg-based'
+					} px-4 py-4 shadow drop-shadow-lg transition-all group-hover:bottom-0 group-hover:scale-[1.01] active:group-hover:bottom-0`}
 				>
 					<h3 class="text-lg font-bold text-light md:text-xl">{titulo}</h3>
 					<p class="text-lighter md:text-lg">
